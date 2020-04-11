@@ -83,18 +83,38 @@ print(r.content)
 #print(xmlsoup)
 
 
-sys.exit()
 
 
 
-resp=requests.get("https://opendart.fss.or.kr/api/fnlttSinglAcnt.json?crtfc_key=" + dart_key + "&corp_code=100120&bsns_year=2019")
+#resp=requests.get("https://opendart.fss.or.kr/api/fnlttSinglAcnt.json?crtfc_key=" + dart_key + "&corp_code=100120&bsns_year=2019")
+resp=requests.get("https://opendart.fss.or.kr/api/list.json?crtfc_key=" + dart_key + "&bgn_de=20200117&end_de=20200117&corp_cls=Y&page_no=1&page_count=10")
+resp.encoding = 'utf-8'
+print("\nresp:")
 print(resp)
+print("\nresp.json:")
 print(resp.json())
 dict=resp.json()
-json.dumps(dict)
-#df2=pd.DataFrame(dict["list"])
-df2
+print("\ndict:")
+print(dict)
+df2=pd.DataFrame(dict["list"])
+print("\ndf2:")
+print(df2)
 #[출처] 다트(dart) 오픈 api 사용하기(python=3.7)|작성자 선인
+
+
+# https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS004&apiId=2019021
+resp=requests.get("https://opendart.fss.or.kr/api/majorstock.json?crtfc_key=" + dart_key + "&corp_code=00356370")
+resp.json()
+print("\nresp.json:")
+print(resp.json())
+dict=resp.json()
+df4=pd.DataFrame(dict["list"])
+df4
+print("\ndf4:")
+print(df4)
+#[출처] 다트(dart) 오픈 api 사용하기(python=3.7)|작성자 선인
+
+sys.exit()
 
 resp=requests.get("https://opendart.fss.or.kr/api/empSttus.json?crtfc_key=" + dart_key + "&corp_code=00356370&bsns_year=2018")
 resp.json()
@@ -103,10 +123,4 @@ df3=pd.DataFrame(dict["list"])
 df3
 #[출처] 다트(dart) 오픈 api 사용하기(python=3.7)|작성자 선인
 
-resp=requests.get("https://opendart.fss.or.kr/api/majorstock.json?crtfc_key=" + dart_key + "&corp_code=00356370&bsns_year=2018")
-resp.json()
-dict=resp.json()
-df4=pd.DataFrame(dict["list"])
-df4
-#[출처] 다트(dart) 오픈 api 사용하기(python=3.7)|작성자 선인
 
