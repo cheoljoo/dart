@@ -1,6 +1,7 @@
 # dart
 
 # crawling.py
+- URL : https://blog.naver.com/jhhlt/221742382586
 - pip3 install BeautifulSoup --user
 - pip3 install BeautifulSoup4
  
