@@ -13,6 +13,7 @@
 
 # company.py
 - URL : https://blog.naver.com/dh3508/221798911085
+- https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS004&apiId=2019021
 
 # dart_fss.py
 - dart-fss : https://dart-fss.readthedocs.io/en/latest/
