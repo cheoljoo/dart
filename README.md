@@ -20,3 +20,8 @@
    - github : https://github.com/josw123/dart-fss
 - error 
    - fail to run until now with error : AttributeError: module 'dart_fss' has no attribute 'set_api_key'
+
+
+## library path 
+- python3 -m site
+- PYTHONPATH
