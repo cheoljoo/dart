@@ -9,3 +9,7 @@
 - pip3 install pandas
 - pip3 install lxml
 - pip3 install openpyxl
+
+# id.py
+- URL : https://blog.naver.com/dh3508/221798911085
+- 
