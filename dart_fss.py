@@ -3,17 +3,18 @@
 # https://dart-fss.readthedocs.io/en/latest/
 # https://github.com/josw123/dart-fss
 
-#import sys
-#sys.path.append('/usr/local/lib/python3.7/site-packages')
+import sys
+sys.path.append('/usr/local/lib/python3.7/site-packages')
 
 import dart_fss as dart
+from dart_fss.auth import get_api_key
 
 # Open DART API KEY 설정
 f = open("dart.key" , "r")
 dart_key = f.readline().strip()
 print("dart_key:" + dart_key + "\n")
 #api_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-print('get key : ' + dart.get_api_key())
+print('get key : ' + fss_auth.get_api_key())
 dart.set_api_key(api_key=dart_key)
 
 # DART 에 공시된 회사 리스트 불러오기
