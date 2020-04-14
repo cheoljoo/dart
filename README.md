@@ -28,3 +28,8 @@
 ## library path 
 - python3 -m site
 - PYTHONPATH
+
+# My error
+- these two package are not working in my mac and groom ide
+  - dart-fss
+  - finance-datareader
