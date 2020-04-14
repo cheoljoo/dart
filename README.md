@@ -1,6 +1,9 @@
 # dart
 - API : https://opendart.fss.or.kr/guide/main.do?apiGrpCd=DS001
 
+## working environment 
+- https://ide-run.goorm.io
+
 # crawling.py
 - URL : https://blog.naver.com/jhhlt/221742382586
 - pip3 install BeautifulSoup --user
