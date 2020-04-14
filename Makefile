@@ -11,5 +11,5 @@ company:
 fss:
 	python3 dart_fss.py
 
-dart:
-	python3 __.py
+fd:
+	python3 financeDataReader.py
